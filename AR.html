@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Modelo AR</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body { margin:0; font-family: Arial, sans-serif; }
+      model-viewer { width:100vw; height:100vh; }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="modelo.glb"
+      ios-src="modelo.usdz"
+      ar
+      ar-modes="scene-viewer quick-look webxr"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1">
+    </model-viewer>
+  </body>
+</html>
